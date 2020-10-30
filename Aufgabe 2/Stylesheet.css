@@ -192,3 +192,20 @@ div {
     width: 701,5px;
     height: 521px;
 }
+.videos {
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 40px;
+    margin-top: 15px;
+    margin-bottom:1px;
+    align-content: center;
+    color: #FFFFFF;
+}
+.videos video {
+    height: 805,5px;
+    width: 621px;
+    text-decoration: none;
+    display: block;
+    font-size: 15px;
+    color: #FFFFFF;
+}
