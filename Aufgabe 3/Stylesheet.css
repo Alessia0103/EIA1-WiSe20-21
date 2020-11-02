@@ -1,0 +1,211 @@
+body {
+	font-family: arial;
+    font-size: small;
+	background: #303030;
+}
+  
+h1 {
+    text-decoration: none;
+	font-size: 3em;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+h1 a { 
+    text-decoration: none;font-size: 5em;
+    font-weight: bold;
+    opacity: 95%;
+    color: #FFFFFF;
+    margin-left: 25px;
+}
+h2 {
+    text-decoration: none;
+    font-size: 1,5em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    color: #FFFFFF;
+    margin-top:90px;
+    margin-left: 250px;
+} 
+
+ul {
+    list-style: none;
+    color: #FFFFFF;
+}
+nav {
+    display: flex;
+    border-bottom: 2px solid #FFFFFF;
+    margin-top: 4px;
+}
+.nav-list {
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 40px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: #FFFFFF;
+}  
+.nav-list a {
+    text-decoration: none;
+    display: block;
+    font-size: 25px;
+    color: #FFFFFF;
+}
+div {  
+     list-style: none;
+    color: #FFFFFF;
+}
+.inhalt {
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap:180px;
+    margin-right: 40px;
+    margin-top:50px;
+    margin-bottom: 20px;
+    color: #FFFFFF;
+    text-align: center;
+} 
+.inhalt a {
+    text-decoration: none;
+    display: block;
+    font-size: 15px;
+    color: #FFFFFF;
+
+}
+.Bilder {
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 40px;
+    margin-top: 15px;
+    margin-bottom:1px;
+    align-content: center;
+    color: #FFFFFF;
+}
+.Bilder a {
+    text-decoration: none;
+    display: block;
+    font-size: 15px;
+    color: #FFFFFF;
+
+}
+.Untertext {
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 40px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    align-content: center;
+    color: #FFFFFF;
+}
+.Untertext p {
+    text-decoration: none;
+    display: block;
+    font-size: 15px;
+    color: #FFFFFF;
+    opacity: 70%;
+}
+.fußnote {
+    grid-auto-flow: column;
+    grid-gap: 1px;
+    margin-top: 50px;
+    margin-bottom: 1px;
+    text-align: center;
+    color: #FFFFFF;
+    opacity: 40%;
+}
+.fußnote a {
+    text-decoration: none;
+    display: block;
+    font-size: 15px;
+    color: #FFFFFF;
+}
+.Contact h4 {
+    text-decoration: none;
+	font-size: 20px;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    color: #FFFFFF;
+    text-align: center;
+}
+.Contact p {
+    font-size: 15px;
+    font-weight: lighter;
+    margin-top: 5px;
+    color: #FFFFFF;
+    text-align: center;
+}
+.Contact h5 {
+    text-decoration: none;
+	font-size: 20px;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    color: #FFFFFF;
+    text-align: center;
+}   
+.Contact h6 {
+    text-decoration: none;
+	font-size: 20px;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    color: #FFFFFF;
+    text-align: center;
+} 
+.Contact a {   
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    font-size: 15px;
+    color: #FFFFFF;
+} 
+.AboutMe b {
+    text-decoration: none;
+	font-size: 25px;
+    font-weight: bold;
+    margin-top: 80px;
+    margin-bottom: 10px;
+    color: #FFFFFF;
+    text-align: center;
+    opacity: 55%;
+} 
+.AboutMe p {
+        font-size: 20px;
+        font-weight: lighter;
+        margin-top: 5px;
+        color: #FFFFFF;
+ }
+ .BildS img {
+    align-content: center;
+    width: 701,5px;
+    height: 521px;
+}
+.BildS p {
+    text-align: center;
+    font-size: 15px;
+    font-weight: lighter;
+    opacity: 40%;
+    color: #FFFFFF;
+}   
+.BildS video {
+    align-content: center;
+    width: 701,5px;
+    height: 521px;
+}
+.videos {
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 40px;
+    margin-top: 15px;
+    margin-bottom:1px;
+    align-content: center;
+    color: #FFFFFF;
+}
+.videos video {
+    height: 805,5px;
+    width: 621px;
+    text-decoration: none;
+    display: block;
+    font-size: 15px;
+    color: #FFFFFF;
+}
