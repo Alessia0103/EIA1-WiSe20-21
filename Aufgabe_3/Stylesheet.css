@@ -316,21 +316,23 @@ div {
     font-size: 15px;
     color: #FFFFFF;
 } 
-.AboutMe b {
+.AboutMe {
     text-decoration: none;
 	font-size: 25px;
     font-weight: bold;
-    margin-top: 80px;
-    margin-bottom: 10px;
-    color: #FFFFFF;
+    margin-top: 15%;
+    margin-bottom:10px;
+    color: #3C5179;
     text-align: center;
-    opacity: 55%;
+    opacity: 80%;
 } 
 .AboutMe p {
         font-size: 20px;
         font-weight: lighter;
-        margin-top: 5px;
-        color: #FFFFFF;
+        margin-top: 10px;
+        color: #3C5179;
+        text-align: center;
+        opacity: 50%;
  }
 .BildS img {
     align-content: center;
