@@ -1,21 +1,25 @@
 body {
-	font-family: arial;
+    font-family: sans-serif;
     font-size: small;
-	background: #303030;
+	background-image:url(Hintergrund.png) ;
 }
   
 h1 {
     text-decoration: none;
-	font-size: 3em;
-    font-weight: bold;
-    color: #FFFFFF;
+	font-size: 4em;
+    font-weight: lighter;
+    text-align: center;
+    margin-top: 1%;
+    color: white;
 }
 h1 a { 
-    text-decoration: none;font-size: 5em;
+    text-decoration: none;font-size: 3em;
     font-weight: bold;
+    padding-top: 30%;
     opacity: 95%;
-    color: #FFFFFF;
-    margin-left: 25px;
+    color: white;
+
+    
 }
 h2 {
     text-decoration: none;
@@ -26,83 +30,236 @@ h2 {
     margin-top:90px;
     margin-left: 250px;
 } 
+h3 {
+    text-decoration: none;
+    font-size: 40px;
+    font-family: sans-serif;
+    font-weight: lighter;
+    color: #FFFFFF;
+    margin-top:-60px;
+    margin-left: -4px;
+    margin-bottom: 2px;
+} 
+.icons {
+    display: grid;
+    grid-auto-flow:column;
+    grid-gap: 1px;
+    margin-inline-end: 50%;
+    margin-left: 46%;
+    margin-top: 2%;
+    z-index: 1;
+    position: absolute;
+    color: #FFFFFF;
+    opacity: 70%;
+    transition: all ease-in-out 0,2s;
+}
+.icons a { 
+    text-decoration: none;
+    grid-gap: 1px;
+    margin-inline-end: 40%;
+    z-index: 1;
+    color: #FFFFFF;
 
+
+}
+.icons:hover{ 
+    transform: translateY(-20px);
+
+
+}  
+.text1 { 
+    position: absolute;  
+    z-index: 1;  
+    font-style: italic;
+    margin-left: 40%;
+    font-size: 17px;
+    margin-top: -2%;
+    opacity: 70%;
+}   
+.Salvador { 
+    position: absolute;  
+    z-index: 1;  
+    font-style: italic;
+    margin-left: 64%;
+    font-size: 15px;
+    margin-top: 0%;
+    opacity: 60%;
+} 
 ul {
     list-style: none;
     color: #FFFFFF;
 }
-nav {
-    display: flex;
-    border-bottom: 2px solid #FFFFFF;
-    margin-top: 4px;
-}
 .nav-list {
+    position: fixed;
+    justify-content: -10%;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
     display: grid;
     grid-auto-flow: column;
-    grid-gap: 40px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    color: #FFFFFF;
+    grid-gap: 5px;
+    margin-top: -1%;
+    margin-bottom: 100%;
+    margin-right: 0%;
+    color: white;
+    background-color:#3C5179;
+    height: 50px;
+    width: 30%;
+    margin-left: 67%;
+    float: inline-start;
+    z-index: 2;
+  
 }  
+.fancy-input{
+   width: 300px;
+   padding:30px;
+   margin: auto;
+   margin-top:10%;
+   font-family: sans-serif;
+   margin-left: 5%;
+
+} 
+.fancy-input .controlls {
+    width: 90%; 
+    margin-block-end: 5px;
+    height: 5px;
+    background: #3C5179;
+    padding: 3%;
+    opacity: 70%;
+    font-size: 15px;
+    font-weight: lighter;
+}    
+.fancy-input .controlls1 {
+    width: 120%; 
+    margin-block-end: 5px;
+    height: 50px;
+    background: #3C5179;
+    padding: 3%;
+    opacity: 70%;
+    font-size: 15px;
+    font-weight: lighter;
+}    
+.fancy-input p {
+    margin-top: 1%;
+    width: 100%;
+    color: white;
+} 
+.fancy-input .bottons {
+    width: 70%;
+    height: 30px;
+    background:#3C5179 ;
+    border: none;
+    color: white;
+    padding: center;
+    font-weight: lighter;
+    font-size: 15px;
+}    
 .nav-list a {
     text-decoration: none;
     display: block;
-    font-size: 25px;
-    color: #FFFFFF;
+    font-size: 15px;
+    color:white;
+    text-transform: uppercase;
+}
+.nav-list .aktuell a {
+    color: #B5C3DD;
+    font-size: 20px;
+    font-weight: bold;
+}   
+.nav-list a:hover{
+    color: #B5C3DD;
+}
+.Banner {
+    width: 150%;
+    height: 1500px;
+    margin-top: -75%;
+    margin-left:-16%;
+    position: absolute;
+    justify-content: 30%;
+    align-items: center;
+    top: 100px;
+    background-image:url(Banner.png);
+    background-size: cover;
+    background-position: center center;
+    float: initial;
+    opacity: 95%;
+   
+
 }
 div {  
      list-style: none;
     color: #FFFFFF;
 }
 .inhalt {
-    display: grid;
-    grid-auto-flow: column;
     grid-gap:180px;
     margin-right: 40px;
-    margin-top:50px;
-    margin-bottom: 20px;
-    color: #FFFFFF;
-    text-align: center;
+    margin-top:20%;
+    margin-bottom: 10px;
+    color: white;
+    text-align: left;
 } 
 .inhalt a {
     text-decoration: none;
     display: block;
-    font-size: 15px;
-    color: #FFFFFF;
+    font-size: 30px;
+    color:white;
+    margin-left: 22%;
+    font-weight: lighter;
+    margin-bottom: 1%;
+}
+.inhalt2 {
+    grid-gap:180px;
+    margin-right: 40px;
+    margin-top:5%;
+    margin-bottom: 10px;
+    color: white;
+    text-align: left;
+    float: none;
+} 
+.inhalt2 a {
+    text-decoration: none;
+    display: block;
+    font-size: 30px;
+    color: white;
+    margin-left: 22%;
+    font-weight: lighter;
+    margin-bottom: 1%;
 
 }
 .Bilder {
-    display: grid;
-    grid-auto-flow: column;
-    grid-gap: 40px;
-    margin-top: 15px;
-    margin-bottom:1px;
+    align-items: center;
+    bottom: 40px;
+    margin-top:1%;
+    margin-bottom:20px;
     align-content: center;
     color: #FFFFFF;
 }
 .Bilder a {
     text-decoration: none;
-    display: block;
     font-size: 15px;
     color: #FFFFFF;
-
 }
-.Untertext {
-    display: grid;
-    grid-auto-flow: column;
-    grid-gap: 40px;
-    margin-top: 1px;
-    margin-bottom: 1px;
+.Bilder2 {
+    align-items: center;
+    bottom: 40px;
+    margin-top:10px;
+    margin-bottom:50px;
     align-content: center;
     color: #FFFFFF;
 }
-.Untertext p {
+.Bilder2 a {
     text-decoration: none;
-    display: block;
     font-size: 15px;
     color: #FFFFFF;
-    opacity: 70%;
 }
+.fotos {
+    margin-top: 20%;
+}    
+.fotos p {
+    margin-left: 21%;
+    margin-bottom: 0;
+    font-weight: lighter;
+}    
 .fußnote {
     grid-auto-flow: column;
     grid-gap: 1px;
@@ -122,7 +279,7 @@ div {
     text-decoration: none;
 	font-size: 20px;
     font-weight: bold;
-    margin-top: 50px;
+    margin-top: 230px;
     margin-bottom: 10px;
     color: #FFFFFF;
     text-align: center;
@@ -175,16 +332,17 @@ div {
         margin-top: 5px;
         color: #FFFFFF;
  }
- .BildS img {
+.BildS img {
     align-content: center;
     width: 701,5px;
     height: 521px;
+    margin-top: 20%;
 }
 .BildS p {
     text-align: center;
     font-size: 15px;
     font-weight: lighter;
-    opacity: 40%;
+    opacity: 100%;
     color: #FFFFFF;
 }   
 .BildS video {
@@ -193,10 +351,8 @@ div {
     height: 521px;
 }
 .videos {
-    display: grid;
-    grid-auto-flow: column;
-    grid-gap: 40px;
-    margin-top: 15px;
+    grid-gap: 10px;
+    margin-top: 20%;
     margin-bottom:1px;
     align-content: center;
     color: #FFFFFF;
