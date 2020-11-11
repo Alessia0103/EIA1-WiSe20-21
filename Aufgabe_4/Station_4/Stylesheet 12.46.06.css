@@ -1,0 +1,21 @@
+body {
+    background-image: url(bg.png);
+    height: 750px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hintergrund {
+    position: absolute;
+    display: block;
+}  
+.youtube  {
+    position:absolute;
+    top: 40px;
+    left: 19px
+} 
+.bow {
+    position:absolute;
+    top: 275px;
+    left: 370px
+} 

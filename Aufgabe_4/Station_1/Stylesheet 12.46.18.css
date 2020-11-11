@@ -1,0 +1,45 @@
+/*Allgemein*/
+body {
+    background-image: url(wallpaper.png);
+    height: 750px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Kartenhintergrund*/
+.wrapper {
+    display: block;
+    position: relative;
+}
+
+/*Png-Dateien*/
+.images {
+    position: absolute;
+}
+
+.busch {
+    position: absolute;
+    top: -470px;
+    left: -50px;
+}
+
+.pinguin {
+    position: absolute;
+    top: -180px;
+    left: 450px;
+}
+
+/*Textinhalt*/
+.text {
+    color: white;
+    position: absolute;
+    top: 0;
+    padding:80px 50px 75px;
+    width: 450px;
+    margin: 30px 0px;
+}
+
+.text .headline {
+    font-size: 30px;
+}

@@ -1,0 +1,66 @@
+body {
+    background-image: url(bg.png);
+    height: 750px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hintergrund {
+    position: absolute;
+    display: block;
+}
+.bing {
+    position: absolute;
+    z-index: 1;
+}
+.bing .bling1{
+    position: absolute;
+    margin-top: -200px;
+    margin-left: 60px;
+}   
+
+.bing .bling2{
+    position: absolute;
+    margin-top: -300px;
+    margin-left: 150px;
+}   
+.bing .bling3{
+    position: absolute;
+    margin-top: -250px;
+    margin-left: 350px;
+}  
+.bing .bling4{
+    position: absolute;
+    margin-top: -100px;
+    margin-left: 250px;
+}
+.fire {
+    position: absolute;
+    top:20px;
+    left:325px
+    
+}
+.gift{
+position: absolute;
+z-index: 1;
+top: 280px;
+margin: 0px;
+left:420px
+}
+.plant{
+    position: absolute;
+    z-index: 1;
+    top: -70px;
+    margin: 0px;
+    padding: -40px;
+    left: -55px;
+}
+ .text p {
+    color: white;
+     position: absolute;
+    top: 140px;
+    padding: 50px 50px;
+    font-size: 30px;
+    margin: 30px 0px;
+}

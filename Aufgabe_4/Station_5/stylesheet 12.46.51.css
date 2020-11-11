@@ -1,0 +1,65 @@
+
+body {
+    background-image: url(bg.png);
+    height: 750px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.hintergrund {
+    display: block;
+    position: relative;
+}
+
+
+
+.formular {
+    
+    position: absolute;
+    top: 210px;
+    left: 500px;
+    color: white;
+}
+
+h1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.abschnitt1 {
+    
+    position: absolute;
+    top: 10px;
+    left:60px;
+}
+
+
+.abschnitt1 p {
+    margin-top: 10px;
+    
+}
+
+
+.abschnitt2 {
+   
+    position: absolute;
+    top: 340px;
+    left: 500px;
+    color: white;
+}
+
+.abschnitt3 {
+ 
+    position: absolute;
+    top: 430px;
+    left: 500px;
+    color: white;
+}
+
+.abschnitt4 {
+    position: absolute;
+    top: 520px;
+    left: 500px;
+}
