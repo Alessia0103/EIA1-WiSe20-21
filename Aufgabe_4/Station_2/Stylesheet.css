@@ -1,0 +1,90 @@
+body {
+    font-family: sans-serif;
+    font-size: small;
+    background-image:url(bg2.png) ;
+    padding: 0px;
+}
+.flex-container {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding:00px;
+}    
+.flex-container .flex-item img  {
+    position: relative;
+   width: 800px;
+   align-content: center;
+margin-top: 120px;
+
+}
+.flex-container .Stern  {
+    position: absolute;
+    margin-top: -300px;
+    margin-left: 400px;
+}
+.flex-container .Stern :hover {
+    background-image: url(stern_hover.png);
+    transition: 2s;
+}  
+.flex-container .Stern2  {
+    position: absolute;
+    margin-top: -200px;
+    margin-left: 500px;
+}
+.flex-container .Stern2 :hover {
+    background-image: url(stern_hover.png);
+    transition: 2s;
+} 
+.flex-container .Stern3 {
+    position: absolute;
+    margin-top: -150px;
+    margin-left: 750px;
+}
+.flex-container .Stern3 :hover {
+    background-image: url(stern_hover.png);
+    transition: 2s;
+}  
+.flex-container .Stern4 {
+    position: absolute;
+    margin-top: -350px;
+    margin-left: 650px;
+}
+.flex-container .Stern4 :hover {
+    background-image: url(stern_hover.png);
+    transition: 2s;
+}  
+.flex-container .Stern5 {
+    position: absolute;
+    margin-top: -250px;
+    margin-left: 900px;
+}
+.flex-container .Stern5 :hover {
+    background-image: url(stern_hover.png);
+    transition: 2s;
+}  
+.flex-container .head {
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(250, 217, 109);
+    position: absolute;
+    margin-top: 150px;
+    margin-left: 350px;
+    z-index: 1;
+} 
+.fußnote {
+    grid-auto-flow: column;
+    grid-gap: 1px;
+    text-decoration: none;
+    margin-top: 50px;
+    list-style: none;
+    margin-bottom: 1px;
+    text-align: center;
+    color:#ffffff;
+    opacity: 40%;
+}
+.fußnote a {
+    text-decoration: none;
+    display: block;
+    list-style: none;
+    font-size: 15px;
+    color: #ffffff;
+}

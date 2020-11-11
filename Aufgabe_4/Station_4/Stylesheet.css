@@ -1,0 +1,45 @@
+body {
+    font-family: sans-serif;
+    font-size: small;
+    background-image:url(bg.png) ;
+    padding: 0px;
+}
+.flex-container {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding:00px;
+}    
+.flex-container .flex-item img  {
+    position: relative;
+   width: 800px;
+   align-content: center;
+margin-top: 120px;
+}
+.fußnote {
+    grid-auto-flow: column;
+    grid-gap: 1px;
+    text-decoration: none;
+    margin-top: 50px;
+    list-style: none;
+    margin-bottom: 1px;
+    text-align: center;
+    color:#ffffff;
+    opacity: 40%;
+}
+.fußnote a {
+    text-decoration: none;
+    display: block;
+    list-style: none;
+    font-size: 15px;
+    color: #ffffff;
+}
+.flex-container .youtube {
+    position: absolute;
+    margin-top: -495px;
+    margin-left: 360px;
+}   
+.flex-container .bow {
+    position: absolute;
+    margin-top: -125px;
+    margin-left: 880px;
+}   
