@@ -8,7 +8,7 @@ body {
 }
 
 
-.hintergrund {
+.wrapper {
     display: block;
     position: relative;
 }
@@ -18,8 +18,8 @@ body {
 .formular {
     
     position: absolute;
-    top: 210px;
-    left: 500px;
+    top: 50px;
+    left: 40px;
     color: white;
 }
 
@@ -31,13 +31,13 @@ h1 {
 .abschnitt1 {
     
     position: absolute;
-    top: 10px;
-    left:60px;
+    top: 50px;
+    left:0px;
 }
-
-
+  
 .abschnitt1 p {
-    margin-top: 10px;
+    margin-top: 30px;
+    margin-bottom: 1px;;
     
 }
 
@@ -45,21 +45,31 @@ h1 {
 .abschnitt2 {
    
     position: absolute;
-    top: 340px;
-    left: 500px;
+    top: 100px;
+    left: 0px;
     color: white;
+}
+.abschnitt2 p {
+    margin-top: 30px;
+    margin-bottom: 1px;
+    width: 290px;
+    
 }
 
 .abschnitt3 {
  
     position: absolute;
-    top: 430px;
-    left: 500px;
+    top: 190px;
+    left: 0px;
     color: white;
 }
-
+.abschnitt3 p{
+    width: 180px;
+    margin-bottom: 10px;
+   
+}
 .abschnitt4 {
     position: absolute;
-    top: 520px;
-    left: 500px;
+    top: 270px;
+    left: 0px;
 }
