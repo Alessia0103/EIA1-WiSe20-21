@@ -31,7 +31,7 @@ h1 {
 .abschnitt1 {
     
     position: absolute;
-    top: 50px;
+    top: 30px;
     left:0px;
 }
   
@@ -45,7 +45,7 @@ h1 {
 .abschnitt2 {
    
     position: absolute;
-    top: 100px;
+    top: 60px;
     left: 0px;
     color: white;
 }
@@ -59,7 +59,7 @@ h1 {
 .abschnitt3 {
  
     position: absolute;
-    top: 190px;
+    top: 130px;
     left: 0px;
     color: white;
 }
@@ -70,6 +70,6 @@ h1 {
 }
 .abschnitt4 {
     position: absolute;
-    top: 270px;
+    top: 220px;
     left: 0px;
 }
