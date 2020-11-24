@@ -39,7 +39,9 @@ function europe() {
     document.querySelector("#h2c").innerHTML = europeGAb;
     document.querySelector(".chart").setAttribute('style', 'height:' + ((europe18 / total) * 100) + '%');
 }
-document.querySelector(".europe").addEventListener("mousemove", europe);
+window.addEventListener("load", function () {
+    document.querySelector(".europe").addEventListener("mousemove", europe);
+});
 function africa() {
     document.querySelector("h1").innerHTML = "Carbon Dioxide Emissions in Africa";
     document.querySelector("h2").innerHTML = africa18;
@@ -49,7 +51,9 @@ function africa() {
     document.querySelector("#h2c").innerHTML = africaGAb;
     document.querySelector(".chart").setAttribute('style', 'height:' + ((africa18 / total) * 100) + '%');
 }
-document.querySelector(".africa").addEventListener("mousemove", africa);
+window.addEventListener("load", function () {
+    document.querySelector(".africa").addEventListener("mousemove", africa);
+});
 function southa() {
     document.querySelector("h1").innerHTML = "Carbon Dioxide Emissions in South America";
     document.querySelector("h2").innerHTML = southa18;
@@ -59,7 +63,9 @@ function southa() {
     document.querySelector("#h2c").innerHTML = southaGAb;
     document.querySelector(".chart").setAttribute('style', 'height:' + ((southa18 / total) * 100) + '%');
 }
-document.querySelector(".southamerica").addEventListener("mousemove", southa);
+window.addEventListener("load", function () {
+    document.querySelector(".southamerica").addEventListener("mousemove", southa);
+});
 function northa() {
     document.querySelector("h1").innerHTML = "Carbon Dioxide Emissions in North America";
     document.querySelector("h2").innerHTML = northa18;
@@ -69,7 +75,9 @@ function northa() {
     document.querySelector("#h2c").innerHTML = northaGAb;
     document.querySelector(".chart").setAttribute('style', 'height:' + ((northa18 / total) * 100) + '%');
 }
-document.querySelector(".northamerica").addEventListener("mousemove", northa);
+window.addEventListener("load", function () {
+    document.querySelector(".northamerica").addEventListener("mousemove", northa);
+});
 function asia() {
     document.querySelector("h1").innerHTML = "Carbon Dioxide Emissions in Asia";
     document.querySelector("h2").innerHTML = asia18;
@@ -79,7 +87,9 @@ function asia() {
     document.querySelector("#h2c").innerHTML = asiaGAb;
     document.querySelector(".chart").setAttribute('style', 'height:' + ((asia18 / total) * 100) + '%');
 }
-document.querySelector(".asia").addEventListener("mousemove", asia);
+window.addEventListener("load", function () {
+    document.querySelector(".asia").addEventListener("mousemove", asia);
+});
 function australia() {
     document.querySelector("h1").innerHTML = "Carbon Dioxide Emissions in Australia";
     document.querySelector("h2").innerHTML = australia18;
@@ -89,5 +99,7 @@ function australia() {
     document.querySelector("#h2c").innerHTML = australiaGAb;
     document.querySelector(".chart").setAttribute('style', 'height:' + ((australia18 / total) * 100) + '%');
 }
-document.querySelector(".australia").addEventListener("mousemove", australia);
+window.addEventListener("load", function () {
+    document.querySelector(".australia").addEventListener("mousemove", australia);
+});
 //# sourceMappingURL=script2.js.map
