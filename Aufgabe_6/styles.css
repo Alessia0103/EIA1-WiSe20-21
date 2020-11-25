@@ -11,7 +11,15 @@ html, body {
 nav {
     margin-bottom: 60px;
 }
+nav img {
+    opacity: 60%;
+    zoom: 0;
 
+}
+nav img:hover {
+    opacity: 100%;
+    zoom: 1.2;
+}    
 section {
     display: inline-block;
     margin: 20px;
