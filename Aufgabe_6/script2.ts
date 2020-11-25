@@ -46,81 +46,49 @@ var northaGAb = (Math.round( northa18 - northa08 )) + "kg CO2";
 var asiaGAb = (Math.round( asia18 - asia08 )) + "kg CO2";
 var australiaGAb = (Math.round( australia18 - australia08 )) + "kg CO2";
 
-function europe() {
-    document.querySelector("h1") .innerHTML = "Carbon Dioxide Emissions in Europe";
-    document.querySelector("h2") .innerHTML = europe18.toString();
-    document.querySelector("p") .innerHTML = "Emission absolute of Europe in 2018";
-    document.querySelector("#h2a") .innerHTML = europeRel;
-    document.querySelector("#h2b") .innerHTML = europePer;
-    document.querySelector("#h2c") .innerHTML = europeGAb;
-    document.querySelector(".chart") .setAttribute('style', 'height:' + ((europe18 / total) * 100) + '%');
+function allgemein(continent, continent18, continentRel, continentPer, continentGAb) {
+    document.querySelector("h1") .innerHTML = "Carbon Dioxide Emissions in " + continent;
+    document.querySelector("h2") .innerHTML = continent18.toString();
+    document.querySelector("p") .innerHTML = "Emission absolute of " + continent + " in 2018";
+    document.querySelector("#h2a") .innerHTML = continentRel;
+    document.querySelector("#h2b") .innerHTML = continentPer;
+    document.querySelector("#h2c") .innerHTML = continentGAb;
+    document.querySelector(".chart") .setAttribute('style', 'height:' + ((continent18 / total) * 100) + '%');
 }
-window.addEventListener("load", function () {
-document.querySelector(".europe").addEventListener("mousemove", europe);
-});
-function africa() {
-    document.querySelector("h1") .innerHTML = "Carbon Dioxide Emissions in Africa";
-    document.querySelector("h2") .innerHTML = africa18.toString();
-    document.querySelector("p") .innerHTML = "Emission absolute of Africa in 2018";
-    document.querySelector("#h2a") .innerHTML = africaRel;
-    document.querySelector("#h2b") .innerHTML = africaPer;
-    document.querySelector("#h2c") .innerHTML = africaGAb;
-    document.querySelector(".chart") .setAttribute('style', 'height:' + ((africa18 / total) * 100) + '%');
-}
-window.addEventListener("load", function () {
-document.querySelector(".africa").addEventListener("mousemove",africa);
-});
 
-function southa() {
-    document.querySelector("h1").innerHTML = "Carbon Dioxide Emissions in South America";
-    document.querySelector("h2").innerHTML = southa18.toString();
-    document.querySelector("p").innerHTML = "Emission absolute of South America in 2018";
-    document.querySelector("#h2a").innerHTML = southaRel;
-    document.querySelector("#h2b").innerHTML = southaPer;
-    document.querySelector("#h2c").innerHTML = southaGAb;
-    document.querySelector(".chart").setAttribute('style', 'height:' + ((southa18 / total) * 100) + '%');
-}
 window.addEventListener("load", function () {
-document.querySelector(".southamerica").addEventListener("mousemove",southa);
-});
-
-function northa() {
-    document.querySelector("h1").innerHTML = "Carbon Dioxide Emissions in North America";
-    document.querySelector("h2").innerHTML = northa18.toString();
-    document.querySelector("p").innerHTML = "Emission absolute of North America in 2018";
-    document.querySelector("#h2a").innerHTML = northaRel;
-    document.querySelector("#h2b").innerHTML = northaPer;
-    document.querySelector("#h2c").innerHTML = northaGAb;
-    document.querySelector(".chart").setAttribute('style', 'height:' + ((northa18 / total) * 100) + '%');
-}
-window.addEventListener("load", function () {
-document.querySelector(".northamerica").addEventListener("mousemove",northa);
-});
-
-function asia() {
-    document.querySelector("h1").innerHTML = "Carbon Dioxide Emissions in Asia";
-    document.querySelector("h2").innerHTML = asia18.toString();
-    document.querySelector("p").innerHTML = "Emission absolute of Asia in 2018";
-    document.querySelector("#h2a").innerHTML = asiaRel;
-    document.querySelector("#h2b").innerHTML = asiaPer;
-    document.querySelector("#h2c").innerHTML = asiaGAb;
-    document.querySelector(".chart").setAttribute('style', 'height:' + ((asia18 / total) * 100) + '%');
-}
-window.addEventListener("load", function () {
-document.querySelector(".asia").addEventListener("mousemove",asia);
-});
-
-function australia() {
-    document.querySelector("h1").innerHTML = "Carbon Dioxide Emissions in Australia";
-    document.querySelector("h2").innerHTML = australia18.toString();
-    document.querySelector("p").innerHTML = "Emission absolute of Australia in 2018";
-    document.querySelector("#h2a").innerHTML = australiaRel;
-    document.querySelector("#h2b").innerHTML = australiaPer;
-    document.querySelector("#h2c").innerHTML = australiaGAb;
-    document.querySelector(".chart").setAttribute('style', 'height:' + ((australia18 / total) * 100) + '%');
-}
-window.addEventListener("load", function () {
-document.querySelector(".australia").addEventListener("mousemove",australia);
-});
+    document.querySelector(".europe").addEventListener("mousemove", function () {
+        allgemein("Europe", europe18, europeRel, europePer, europeGAb)
+})});
 
 
+window.addEventListener("load", function () {
+document.querySelector(".africa").addEventListener("mousemove", function () {
+    allgemein("Africa", africa18, africaRel, africaPer, africaGAb)
+})});
+
+
+window.addEventListener("load", function () {
+    document.querySelector(".southamerica").addEventListener("mousemove", function () {
+        allgemein("South America", southa18, southaRel, southaPer, southaGAb)
+})});
+
+
+
+window.addEventListener("load", function () {
+    document.querySelector(".northamerica").addEventListener("mousemove", function () {
+        allgemein("North America", northa18, northaRel, northaPer, northaGAb)
+})});
+
+
+
+window.addEventListener("load", function () {
+    document.querySelector(".asia").addEventListener("mousemove", function () {
+        allgemein("Asia", asia18, asiaRel, asiaPer, asiaGAb)
+})});
+
+
+window.addEventListener("load", function () {
+    document.querySelector(".australia").addEventListener("mousemove", function () {
+        allgemein("Australia", australia18, australiaRel, australiaPer, australiaGAb)
+})});
