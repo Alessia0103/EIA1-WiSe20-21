@@ -32,7 +32,7 @@ var asiaGAb = (Math.round(asia18 - asia08)) + "kg CO2";
 var australiaGAb = (Math.round(australia18 - australia08)) + "kg CO2";
 function europe() {
     document.querySelector("h1").innerHTML = "Carbon Dioxide Emissions in Europe";
-    document.querySelector("h2").innerHTML = europe18;
+    document.querySelector("h2").innerHTML = europe18.toString();
     document.querySelector("p").innerHTML = "Emission absolute of Europe in 2018";
     document.querySelector("#h2a").innerHTML = europeRel;
     document.querySelector("#h2b").innerHTML = europePer;
@@ -44,7 +44,7 @@ window.addEventListener("load", function () {
 });
 function africa() {
     document.querySelector("h1").innerHTML = "Carbon Dioxide Emissions in Africa";
-    document.querySelector("h2").innerHTML = africa18;
+    document.querySelector("h2").innerHTML = africa18.toString();
     document.querySelector("p").innerHTML = "Emission absolute of Africa in 2018";
     document.querySelector("#h2a").innerHTML = africaRel;
     document.querySelector("#h2b").innerHTML = africaPer;
@@ -56,7 +56,7 @@ window.addEventListener("load", function () {
 });
 function southa() {
     document.querySelector("h1").innerHTML = "Carbon Dioxide Emissions in South America";
-    document.querySelector("h2").innerHTML = southa18;
+    document.querySelector("h2").innerHTML = southa18.toString();
     document.querySelector("p").innerHTML = "Emission absolute of South America in 2018";
     document.querySelector("#h2a").innerHTML = southaRel;
     document.querySelector("#h2b").innerHTML = southaPer;
@@ -68,7 +68,7 @@ window.addEventListener("load", function () {
 });
 function northa() {
     document.querySelector("h1").innerHTML = "Carbon Dioxide Emissions in North America";
-    document.querySelector("h2").innerHTML = northa18;
+    document.querySelector("h2").innerHTML = northa18.toString();
     document.querySelector("p").innerHTML = "Emission absolute of North America in 2018";
     document.querySelector("#h2a").innerHTML = northaRel;
     document.querySelector("#h2b").innerHTML = northaPer;
@@ -80,7 +80,7 @@ window.addEventListener("load", function () {
 });
 function asia() {
     document.querySelector("h1").innerHTML = "Carbon Dioxide Emissions in Asia";
-    document.querySelector("h2").innerHTML = asia18;
+    document.querySelector("h2").innerHTML = asia18.toString();
     document.querySelector("p").innerHTML = "Emission absolute of Asia in 2018";
     document.querySelector("#h2a").innerHTML = asiaRel;
     document.querySelector("#h2b").innerHTML = asiaPer;
@@ -92,7 +92,7 @@ window.addEventListener("load", function () {
 });
 function australia() {
     document.querySelector("h1").innerHTML = "Carbon Dioxide Emissions in Australia";
-    document.querySelector("h2").innerHTML = australia18;
+    document.querySelector("h2").innerHTML = australia18.toString();
     document.querySelector("p").innerHTML = "Emission absolute of Australia in 2018";
     document.querySelector("#h2a").innerHTML = australiaRel;
     document.querySelector("#h2b").innerHTML = australiaPer;
