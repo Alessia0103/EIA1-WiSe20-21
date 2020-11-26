@@ -24,7 +24,6 @@ var australia18 = 2100.5;
 var total = europe18 + africa18 + southa18 + northa18 + asia18 + australia18;
 console.log(total);
 
-
 var europeRel = (Math.round((europe18 / total )* 100))+"%";
 var africaRel = (Math.round((africa18 / total )* 100))+"%";
 var southaRel = (Math.round((southa18 / total )* 100))+"%";
@@ -58,7 +57,7 @@ function allgemein(continent, continent18, continentRel, continentPer, continent
 
 window.addEventListener("load", function () {
     document.querySelector(".europe").addEventListener("mousemove", function () {
-        allgemein("Europe", europe18, europeRel, europePer, europeGAb)
+        allgemein("Europe", europe18, europeRel, europePer, europeGAb,)
 })});
 
 
