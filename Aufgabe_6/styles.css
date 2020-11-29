@@ -13,7 +13,8 @@ nav {
 }
 
 nav img {
-    opacity: 60%;
+    color: #020F65;
+    opacity: 50%;
     zoom: 0;
 
 }
@@ -30,9 +31,10 @@ section {
 .chartWrapper {
     position: relative;
     display: inline-block;
-    width: 50px;
+    width: 35px;
     height: 100px;
     border-radius: 10%;
+    border-style: inset;
     background: rgba(255, 255, 255, 0.5);
 }
 .chartWrapper .chart {
