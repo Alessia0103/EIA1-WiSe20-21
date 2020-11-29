@@ -10,14 +10,12 @@ html, body {
 
 nav {
     margin-bottom: 60px;
-    height: 230px;
+    height: 220px;
 }
 
 nav img {
     height: 185px;
     opacity: 0.8;
-    transition: height 0.5s, opacity 0.5s;
-    cursor: pointer;
 }
 nav img:hover {
     opacity: 100%;
