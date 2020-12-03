@@ -20,7 +20,7 @@ body{
     flex-wrap: wrap;
 }
 .Drums .pad1:hover {
-    background-color:#FF0040;
+    background-color:#BBDEFB;
     cursor: pointer;
 }
 
@@ -30,7 +30,7 @@ body{
     transition: all .01;
 }
 .Drums .pad2:hover {
-    background-color:#FF0040;
+    background-color:#BBDEFB;
     cursor: pointer;
 }
 
@@ -40,7 +40,7 @@ body{
     transition: all .01;
 }
 .Drums .pad3:hover {
-    background-color:#FF0040;
+    background-color:#BBDEFB;
     cursor: pointer;
 }
 
@@ -50,7 +50,7 @@ body{
     transition: all .01;
 }
 .Drums .pad4:hover {
-    background-color:#FF0040;
+    background-color:#BBDEFB;
     cursor: pointer;
 }
 
@@ -60,7 +60,7 @@ body{
     transition: all .01;
 }
 .Drums .pad5:hover {
-    background-color:#FF0040;
+    background-color:#BBDEFB;
     cursor: pointer;
 }
 
@@ -70,7 +70,7 @@ body{
     transition: all .01;
 }
 .Drums .pad6:hover {
-    background-color:#FF0040;
+    background-color:#BBDEFB;
     cursor: pointer;
 }
 
@@ -80,7 +80,7 @@ body{
     transition: all .01;
 }
 .Drums .pad7:hover {
-    background-color:#FF0040;
+    background-color:#BBDEFB;
     cursor: pointer;
 }
 
@@ -90,7 +90,7 @@ body{
     transition: all .01;
 }
 .Drums .pad8:hover {
-    background-color:#FF0040;
+    background-color:#BBDEFB;
     cursor: pointer;
 }
 
@@ -100,7 +100,7 @@ body{
     transition: all .01;
 }
 .Drums .pad9:hover {
-    background-color:#FF0040;
+    background-color:#BBDEFB;
     cursor: pointer;
 }
 
@@ -115,31 +115,31 @@ body{
     border-radius: 15px;
 }  
 .Drums .pad1 {
-    background-color: #F5A9A9;    
+    background-color: #1565C0;    
 }     
 .Drums .pad2 {
-    background-color :#F78181;    
+    background-color :#1565C0;    
 }  
 .Drums .pad3 {
-    background-color: #FA5858;    
+    background-color: #1565C0;    
 }  
 .Drums .pad4 {
-    background-color: #F5A9BC;    
+    background-color: #1565C0;    
 }  
 .Drums .pad5 {
-    background-color: #F7819F;    
+    background-color: #039BE5;    
 }  
 .Drums .pad6 {
-    background-color: #FA5882;    
+    background-color: #039BE5;    
 } 
 .Drums .pad7 {
-    background-color: #F5A9D0;    
+    background-color: #1565C0;    
 }  
 .Drums .pad8 {
-    background-color: #F781BE;    
+    background-color: #85C1E9;    
 }  
 .Drums .pad9 {
-    background-color: #FA58AC;    
+    background-color: #85C1E9;    
 }  
 .button {
     margin-bottom:10px;
