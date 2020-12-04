@@ -26,7 +26,6 @@ body{
 }
 
 .Drums .pad1:active {
-    
     transform: scale(0.9);
     transition: all .01;
 }
@@ -36,7 +35,6 @@ body{
 }
 
 .Drums .pad2:active {
-   
     transform: scale(0.9);
     transition: all .01;
 }
@@ -46,7 +44,6 @@ body{
 }
 
 .Drums .pad3:active {
-    
     transform: scale(0.9);
     transition: all .01;
 }
@@ -56,7 +53,6 @@ body{
 }
 
 .Drums .pad4:active {
-    
     transform: scale(0.9);
     transition: all .01;
 }
@@ -66,7 +62,6 @@ body{
 }
 
 .Drums .pad5:active {
-   
     transform: scale(0.9);
     transition: all .01;
 }
@@ -76,7 +71,6 @@ body{
 }
 
 .Drums .pad6:active {
-    
     transform: scale(0.9);
     transition: all .01;
 }
@@ -86,7 +80,6 @@ body{
 }
 
 .Drums .pad7:active {
-    
     transform: scale(0.9);
     transition: all .01;
 }
@@ -96,7 +89,6 @@ body{
 }
 
 .Drums .pad8:active {
-    
     transform: scale(0.9);
     transition: all .01;
 }
@@ -106,7 +98,6 @@ body{
 }
 
 .Drums .pad9:active {
-   
     transform: scale(0.9);
     transition: all .01;
 }
