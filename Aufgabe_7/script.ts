@@ -10,7 +10,7 @@ drums[6] = new Audio("kick.mp3");
 drums[7] = new Audio("laugh-1.mp3");
 drums[8] = new Audio("laugh-2.mp3");
 
-function playSample(x) {
+function playSample(x:number) {
     drums[x].play();
 }
 
@@ -42,13 +42,14 @@ document.querySelector(".pad9").addEventListener("click", function () {
     playSample(8);
 });
 
+
 function interval() {
+    setInterval(function (){
     drums[6].play();
     drums[5].play();
     drums[4].play();
+},400);
 }
 document.querySelector(".button").addEventListener("click", function () {
-    setInterval(function () {
         interval();
-    }, 500);
 });

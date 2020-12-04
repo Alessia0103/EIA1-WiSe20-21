@@ -40,13 +40,13 @@ document.querySelector(".pad9").addEventListener("click", function () {
     playSample(8);
 });
 function interval() {
-    drums[6].play();
-    drums[5].play();
-    drums[4].play();
+    setInterval(function () {
+        drums[6].play();
+        drums[5].play();
+        drums[4].play();
+    }, 400);
 }
 document.querySelector(".button").addEventListener("click", function () {
-    setInterval(function () {
-        interval();
-    }, 500);
+    interval();
 });
 //# sourceMappingURL=script.js.map
