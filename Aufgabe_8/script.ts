@@ -58,7 +58,7 @@ let recording: boolean;
 
 //button play pause toggen
 const play: HTMLElement = document.getElementById("play");
-const pause: HTMLElement = document.getElementById("pause");                    //array für die Aufnahme (beat)
+const pause: HTMLElement = document.getElementById("pause");                    
 
 
 
@@ -137,7 +137,61 @@ function playsound(i: boolean): void {              //sagt ob das interval angew
     } else {
         clearInterval(interval);
     }
-}     
+}    
+
+//Tastenkombi
+// tslint:disable-next-line: typedef
+document.addEventListener("keydown", function(click): void {
+    switch (click.key) {
+        case "w":
+            playSample(0);
+            break;
+        case "e":
+            playSample(1);
+            break;
+        case "r":
+            playSample(2);
+            break;
+        case "t":
+            playSample(3);
+            break;
+        case "z":
+            playSample(4);
+            break;
+        case "u":
+            playSample(5);
+            break;
+        case "i":
+            playSample(6);
+            break;
+        case "o":
+            playSample(7);
+            break;
+         case "p":
+            playSample(8);
+            break;
+        case "a":
+            recordB(x);
+            change(record, recordred);
+            recording = true;
+            break;
+        case "s":
+            recordB(x);
+            change(recordred, record);
+            recording = false;
+            break;
+        case "n":
+            classswitch(play, pause);
+            playsound(true);
+            break;
+        case "m":
+            classswitch(pause, play);
+            playsound(false);
+            break;
+        case "y":
+            leeresArray = [];
+            break;
+       }});
 
 
 
