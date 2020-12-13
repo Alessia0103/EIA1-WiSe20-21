@@ -119,32 +119,41 @@ function playsound(i) {
 // tslint:disable-next-line: typedef
 document.addEventListener("keydown", function (click) {
     switch (click.key) {
-        case "w":
+        case "1":
             playSample(0);
+            recordB(0);
             break;
-        case "e":
+        case "2":
             playSample(1);
+            recordB(1);
             break;
-        case "r":
+        case "3":
             playSample(2);
+            recordB(2);
             break;
-        case "t":
+        case "4":
             playSample(3);
+            recordB(3);
             break;
-        case "z":
+        case "5":
             playSample(4);
+            recordB(4);
             break;
-        case "u":
+        case "6":
             playSample(5);
+            recordB(5);
             break;
-        case "i":
+        case "7":
             playSample(6);
+            recordB(6);
             break;
-        case "o":
+        case "8":
             playSample(7);
+            recordB(7);
             break;
-        case "p":
+        case "9":
             playSample(8);
+            recordB(8);
             break;
         case "a":
             recordB(x);
