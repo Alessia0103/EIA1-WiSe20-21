@@ -1,0 +1,152 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+/* ------------ container ------------ */
+.container{
+
+    padding:10px;
+    width:380px;
+    margin:0 auto;
+    box-shadow: 10px 10px 15px rgb(185, 185, 185);
+    
+}
+
+/* ------------ header ------------ */
+.header{
+    width: 380px;
+    height:200px;
+    background-image: url(lol.PNG);
+    opacity: 90%;
+    background-size: 100% 200%;
+    border-radius: 15px 15px 0 0;
+    position: relative;
+}
+#redo{
+    width : 30px;
+    height: 30px;
+    position: absolute;
+    right:20px;
+    top: 20px;
+    opacity: 100%;
+}
+#redo i{
+    font-size: 30px;
+    color: #FFF;
+    opacity: 100%;
+}
+#redo i:hover{
+    cursor: pointer;
+    text-shadow: 1px 3px 5px #000;
+    transform: rotate(180deg);
+    color: #9C8874;
+    opacity: 100%;
+}
+#data{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: #FFF;
+    font-size: 25px;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+/* ------------ content ------------ */
+.textbase{
+    width:380px;
+    height: 350px;
+    max-height:350px;
+    background-color: #FFF;
+    overflow: auto;
+}
+.textbase ul{
+    padding:0;
+    margin:0;
+}
+.item{
+    width:380px;
+    height: 45px;
+    min-height: 45px;
+    position: relative;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.item i.fa-circle{
+    position: absolute;
+    font-size: 25px;
+    padding-left:5px;
+    left:10px;
+    top:10px;
+}
+.item i.fa-circle:hover{
+    cursor: pointer;
+}
+.fa-check-circle{
+    color:#6eb200;
+    position: absolute;
+    font-size: 25px;
+    padding-left:5px;
+    left:10px;
+    top:10px;
+}
+.item p.idk{
+    position: absolute;
+    padding:0;
+    margin:0;
+    font-size: 20px;
+    left:50px;
+    top:13px;
+    background-color: #FFF;
+    max-width:285px;
+    color:gray;
+}
+.lineThrough{
+    text-decoration: line-through;
+    color : #ccc;
+}
+.item i.fa-trash{
+    position: absolute;
+    font-size: 25px;
+    right:15px;
+    color:gray;
+    top:10px;
+}
+.item i.fa-trash:hover{
+    color:#af0000;
+    cursor: pointer;
+}
+#number {
+color: grey;
+size:10px;
+margin-left:10px;
+}
+/* ------------ add item ------------ */
+#plus{
+    position: relative;
+    width: 360px;
+    height:40px;
+    background-color: #FFF;
+    padding: 10px;
+    border-top: 1px solid rgba(0,0,0,0.1);
+}
+#plus i{
+    position: absolute;
+    font-size: 40px;
+    color: #9C8874;
+}
+
+#plus input{
+    position: absolute;
+    left: 50px;
+    height: 35px;
+    width: 310px;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    padding-left:10px;
+}
