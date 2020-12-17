@@ -32,6 +32,7 @@ if (date) {
 // tslint:disable-next-line: no-any
 function loadList(array: any[]): void {
     
+    
     // tslint:disable-next-line: typedef
     array.forEach(function(redo: { name: string; id: number; done: boolean; trash: boolean; }) {
         addToDo(redo.name, redo.id, redo.done, redo.trash);
@@ -78,8 +79,8 @@ function addToDo(toDo: string, id: number, done: boolean, trash: boolean ): void
 }
 var x: number = 1;
 
-// tslint:disable-next-line: typedef
-document.addEventListener("keyup", function(event): void { 
+
+document.addEventListener("keyup", function(event: KeyboardEvent): void { 
     if (event.key == "Enter") {
         const toDo: string = text.value;
 
@@ -148,8 +149,8 @@ function removeToDo(element: Element): void {
 //eventlistener für knöpfe
 
 
-// tslint:disable-next-line: typedef
-list.addEventListener("click", function(event) {
+
+list.addEventListener("click", function(event: Event): void {
     const click: EventTarget = event.target;
     
     // tslint:disable-next-line: typedef

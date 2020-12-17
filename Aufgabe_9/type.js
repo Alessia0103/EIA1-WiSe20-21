@@ -53,7 +53,6 @@ function addToDo(toDo, id, done, trash) {
     list.insertAdjacentHTML(position, item);
 }
 var x = 1;
-// tslint:disable-next-line: typedef
 document.addEventListener("keyup", function (event) {
     if (event.key == "Enter") {
         var toDo = text.value;
@@ -105,7 +104,6 @@ function removeToDo(element) {
     LIST[element.id].trash = true;
 }
 //eventlistener für knöpfe
-// tslint:disable-next-line: typedef
 list.addEventListener("click", function (event) {
     var click = event.target;
     // tslint:disable-next-line: typedef
