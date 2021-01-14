@@ -13,6 +13,8 @@ var id = 0;
 var nome;
 var done;
 var trash;
+var done = 0;
+var open = 0;
 //Lokaler speicher damit beim refreshen der Seite die to-dos bleiben, //wird nun überall hingemacht wo wir den Array updaten
 var date = localStorage.getItem("TODO");
 //Checken ob die date nicht leer ist 
@@ -104,6 +106,7 @@ function completeToDo(element) {
     element.classList.toggle(nichterledigt);
     element.parentNode.querySelector(".idk").classList.toggle(druchgestrichen);
     LIST[element.id].done = LIST[element.id].done ? false : true;
+    
 }
 //remove #trash //das ganze element muss gelöscht werden
 function removeToDo(element) {

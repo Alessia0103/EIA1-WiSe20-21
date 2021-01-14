@@ -13,8 +13,8 @@
  */
 var arraytodo = [
     {
-       text: "Lorem",
-       checked: true
+        text: "Lorem",
+        checked: true
     },
     {
         text: "Ipsum",
@@ -23,9 +23,8 @@ var arraytodo = [
     {
         text: "Dolor",
         checked: false
-     }
-    ];
-
+    }
+];
 /**
  * Die Anwendung wird immer wieder auf die selben
  * DOM-Elemente zugreifen müssen. Damit diese Elemente nicht
@@ -37,8 +36,7 @@ var inputDOMElement;
 var addButtonDOMElement;
 var todosDOMElement;
 var counterDOMElement;
-var idOpen;
-var idDone
+var artynom = false;
 /**
  * Sobald der DOM geladen wurde können grundlegende DOM-Interaktionen
  * initialisiert werden
@@ -53,11 +51,14 @@ window.addEventListener("load", function () {
     addButtonDOMElement = document.querySelector("#addButton");
     todosDOMElement = document.querySelector("#todos");
     counterDOMElement = document.querySelector("#counter");
+
     /**
      * Jetzt da der DOM verfügbar ist kann auch ein Event-Listener
      * auf den AddToDo Button gesetzt werden.
      */
-    addButtonDOMElement.addEventListener("click", addTodo);
+    addButtonDOMElement.addEventListener("click", function () {
+        addTodo(inputDOMElement.value);
+    });
     /**
      * Initial soll einmal die Liste an bereit definierten ToDos
      * aus den Arrays in den DOM gezeichnet werden.
@@ -107,6 +108,7 @@ function drawListToDOM() {
     }
     updateCounter();
 }
+//done / open-Task Variablen für den Counter:
 function updateCounter() {
     var open = 0;
     var done = 0;
@@ -122,7 +124,7 @@ function updateCounter() {
 /**
  * Ein neues ToDo wird folgendermaßen erstellt:
  */
-function addTodo() {
+function addTodo(text) {
     /**
      * Zunächst wird geprüft, ob das Input-Feld nicht leer ist
      * (ansonsten würde ein leerer ToDo-Text erstellt werden,
@@ -130,23 +132,27 @@ function addTodo() {
      */
     if (inputDOMElement.value != "") {
         /**
-         * Der Eingabe-Wert aus dem Input-Feld (.value) wird
-         * als neues Element in das ToDo-Array gepusht.
-         * Gleichzeitig wird in ein zweites Array, das den Checked- / Uncheck-
-         * Status der ToDos abbildet, für dieses ToDo (weil selbe Stelle im Array)
-         * der Status "unchecked", hier false, gepusht.
+        Text + checked/unchecked status wird in das todosArray als Objekt geschoben
          */
-        /** mit unshift wird das element am anfang des arrays hinzugefügt  */
         arraytodo.unshift({
-           text: inputDOMElement.value,
-           checked: false
-       })
+            text: inputDOMElement.value,
+            checked: false
+        });
         // Jetzt wird der Text aus dem Eingabefeld gelöscht
         inputDOMElement.value = "";
         /**
          * Die zentrale Funktion, um die Liste des ToDo-Arrays in den DOM zu rendern
          * wird wieder getriggert
          */
+        drawListToDOM();
+    }
+    if (artynom == true) {
+        arraytodo.unshift({
+            text: text,
+            checked: false
+        });
+        artynom = false;
+       
         drawListToDOM();
     }
 }
@@ -167,7 +173,7 @@ function toggleCheckState(index) {
      * Alternativ könnte man hier natürlich auch andere Schreibweisen (wie sie im
      * Kurs behandelt wurden) nutzen.
      */
-    arraytodo[index].checked= !arraytodo[index].checked;
+arraytodo[index].checked= !arraytodo[index].checked;
     /**
      * Die zentrale Funktion, um die Liste des ToDo-Arrays in den DOM zu rendern
      * wird wieder getriggert
@@ -192,4 +198,45 @@ function deleteTodo(index) {
      */
     drawListToDOM();
 }
+//Sprachbefehl:
+window.addEventListener("load", function () {
+    var artyom = new Artyom();
+    artyom.addCommands({
+        smart: true,
+        indexes: ["Erstelle Aufgabe *"],
+        action: function (i, wildcard) {
+            artynom = true;
+            addTodo(wildcard);
+        }
+    });
+    document.querySelector("#start-voice").addEventListener("click", function () {
+        artyom.dontObey();
+        artyom.initialize({
+            debug: true,
+            lang: "de-DE"
+        });
+        artyom.say("hey, was kann ich für dich tun?");
+        setTimeout(function () {
+            artyom.obey();
+        }, 8000);
+        startArtyom();
+    });
+    document.querySelector("#stop-voice").addEventListener("click", function () {
+        stopArtyom();
+        artyom.say("alright");
+    });
+    function startArtyom() {
+        artyom.initialize({
+            lang: "de-DE",
+            continuous: true,
+            listen: true,
+            interimResults: true,
+            debug: true,
+            speed: 1
+        });
+    }
+    function stopArtyom() {
+        artyom.fatality();
+    }
+});
 //# sourceMappingURL=script.js.map
