@@ -11,6 +11,7 @@ drums[6] = new Audio("kick.mp3");
 drums[7] = new Audio("laugh-1.mp3");
 drums[8] = new Audio("laugh-2.mp3");
 
+
 function playSample(x: number): void {
     drums[x].play();
 }

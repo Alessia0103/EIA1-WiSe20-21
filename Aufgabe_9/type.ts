@@ -166,3 +166,8 @@ list.addEventListener("click", function(event: Event): void {
 // Anzeigen, wie viele todos noch existieren
 function ListederElemente(): void {
     document.getElementById("number").innerHTML = "Tasks for today: " + id; }
+
+
+
+
+ 
